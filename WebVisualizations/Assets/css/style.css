@@ -1,0 +1,296 @@
+/* ----Overall Page Styling---- */
+html {
+  /* Position */
+  position: relative;
+
+  /* Box-model */
+  min-height: 100%;
+}
+
+body {
+  /* Positioning */
+  margin-top: 20px;
+  margin-bottom: 200px;
+
+  /* Typography */
+  font-family: Georgia;
+
+  /* Visual */
+  background-color: rgb(67, 55, 75);
+  background-image: url(https://wallpapercave.com/wp/wp1814551.jpg);
+}
+
+/* Media query for body */
+@media only screen and (max-width: 767px) {
+  /* Set background color to white on small screens */
+  body {
+    background-color: white;
+  }
+}
+
+/* ----Nav Styling----EDITED */
+.navbar-custom {
+  background-color: rgb(199, 163, 163);
+}
+
+#logo {
+  /* Box-model */
+  height: 80px;
+  padding-top: 35px;
+
+  /* Positioning */
+  margin-left: 50px;
+  font-family: Georgia;
+
+  /* Typography */
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(92, 28, 28);
+
+  background: #f1f5f5;
+}
+
+/* Logo hover state */
+#logo:hover {
+  opacity: 0.9;
+}
+
+.navbar-right-custom {
+  padding-top: 14px;
+  padding-right: 30px;
+
+  /* Typography */
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+/* Nav element hover state EDITED*/
+.navbar-default .navbar-nav > li > a:hover {
+  color: #aefded;
+  font-style: italic;
+}
+
+/* Media query for nav */
+@media only screen and (max-width: 767px) {
+  .navbar-header {
+    background-color: #4aaaa5;
+  }
+
+  #logo {
+    width: 100%;
+
+    /* Box-model */
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+
+    /* Positioning */
+    margin-left: 0;
+    font-family: Georgia, Times, "Times New Roman", serif;
+
+    /* Typography */
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+
+    /* Visual */
+    background: #4aaaa5;
+  }
+}
+
+/* -----NAV END---- */
+
+/*----Data---*/
+
+.data-content {
+  padding: 30px;
+  margin-top: 50px;
+  background-color: rgb(247, 245, 247)
+}
+
+.data-header {
+  /* Positioning */
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: Cambria;
+
+  /* Typography */
+  font-size: 50px;
+  color: #e0034d;
+  font-weight:bold;
+}
+.data-text {
+  padding-bottom: 25px;
+  color:rgb(21, 2, 58);
+  font-weight:bold;
+}
+
+
+/* ----DESCRIPTION START---- */
+.description-header {
+  /* Positioning */
+  margin-top: 14px;
+  margin-bottom: 10px;
+  font-family: Cambria;
+
+  /* Typography */
+  font-size: 32px;
+  color: #6cf8e5;
+  font-weight:bold;
+}
+
+.description-content {
+  padding: 30px;
+  margin-top: 50px;
+  background-color: rgb(102, 70, 94);
+  border: #4aaaa5;
+  border-width: 5px;
+}
+
+.description-content > p {
+  /* Box-model */
+  padding-top: 20px;
+
+  /* Typography */
+  font-size: 16px;
+  line-height: 30px;
+  color: rgb(250, 249, 250);
+}
+
+.description-text {
+  padding-bottom: 10px;
+  color:white;
+}
+
+#description-image {
+  /* Positioning */
+  float: left;
+
+  /* Box-model */
+  width: 200px;
+  height: 180px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Description content media query */
+@media only screen and (max-width: 767px) {
+  /* override default class styling for positioning/padding */
+
+  .description-content {
+    /* Box-model */
+    padding: 0;
+
+    /* Positioning */
+    margin-top: 0;
+  }
+}
+
+/* ----DESCRIPTION END---- */
+
+/* ----IMAGE NAV START---- */
+#imageNav-area {
+  width: 100%;
+
+  /* Box-model */
+  padding: 20px 75px 57px;
+
+  /* Positioning */
+  margin-top: 50px;
+
+  /* Visual */
+  background-color: rgb(102, 70, 94);
+}
+
+.imageNav-header {
+  /* Positioning */
+  margin-top: 27px;
+  margin-bottom: 15px;
+  font-family: cambria;
+
+  /* Typography */
+  font-size: 32px;
+  font-weight: bold;
+  color: #6cf8e5;
+}
+
+.imageNav-photo {
+  width: 200px;
+
+  /* Box-model */
+  height: 160px;
+}
+
+.imageNav-photo:hover {
+  /* Visuals */
+  opacity: 0.8;
+}
+
+.imageNav-photo.active {
+  /* Visuals */
+  border: 9px solid #f780d9;
+}
+
+#images {
+  /* Box-model */
+  padding-top: 15px;
+
+  /* Typography */
+  text-align: center;
+}
+
+/* ----IMAGE NAV END---- */
+
+/* ----COMPARISON START---- */
+.comparison-image:hover {
+  opacity: .5;
+}
+
+.comparison-header {
+  /* Positioning */
+  margin-bottom: 15px;
+  font-family: Cambria;
+
+  /* Typography */
+  font-size: 20px;
+  font-weight: bold;
+  color:#e9bec7;
+  text-align: center;
+}
+
+/* ----COMPARISON END---- */
+
+/* ----FOOTER START---- */
+.footer {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+
+  /* Box-model */
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+
+  /* Visual */
+  background-color:rgb(90, 78, 95);
+}
+
+.text-muted-footer {
+  /* Positioning */
+  margin-top: 10px;
+
+  /* Typography */
+  color: #fff;
+}
+
+.two-toned-footer-color {
+  /* Box-model */
+  height: 6px;
+  padding-top: 3px;
+
+  /* Visual */
+  background-color: #c6ecea;
+}
+
+/* ----FOOTER END---- */
